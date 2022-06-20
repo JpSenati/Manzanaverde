@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/manzana"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo_manzanaverde" />
+
+
+    <TextView
+        android:id="@+id/iniciar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Iniciar sesión"
+        android:textColor="#4CAF50"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manzana" />
+
+    <TextView
+        android:id="@+id/con_tu_red_social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Con tu red social"
+        android:textColor="#F5000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iniciar_sesion" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/color_face"
+        android:fontFamily="sans-serif-medium"
+        android:text="f"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/con_tu_red_social" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="182dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Google"
+        android:textColor="#130515"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/facebook"
+        app:layout_constraintTop_toTopOf="@id/facebook" />
+
+    <Button
+        android:id="@+id/apple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif"
+        android:text="Continuar con Apple"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@id/facebook"    />
+
+    <Button
+        android:id="@+id/continua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Continúa con tu celular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="16sp"
+        android:backgroundTint="#4CAF50"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/apple"  />
+
+    <TextView
+        android:id="@+id/con_tu_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Con tu correo"
+        android:textColor="#0B0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/continua" />
+
+    <TextView
+        android:id="@+id/ingrese_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Ingrese su correo electrónico"
+        android:textColor="#120101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/con_tu_correo" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ejemplo@correo.com"
+        app:layout_constraintTop_toBottomOf="@id/ingrese_correo"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"   />
+
+    <TextView
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Contraseña"
+        android:textColor="#120404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/correo" />
+
+    <EditText
+        android:id="@+id/ingrese_contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Debe tener minimo 8 digitos"
+        android:drawableEnd="@drawable/ic_eye_password"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contraseña"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"   />
+
+    <Button
+        android:id="@+id/inicia_sesion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Inicia sesión"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ingrese_contraseña" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
